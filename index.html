@@ -13,14 +13,14 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Praveen Kumar & Sujatha Wedding Invitation">
 <meta property="og:description" content="Join us to celebrate our special day. Tap to view invitation.">
-<meta property="og:image" content="https://praveenwedsujatha.vercel.app/images/preview.jpg">
-<meta property="og:url" content="https://praveenwedsujatha.vercel.app/">
+<meta property="og:image" content="https://praveenwedsujatha.vercel.app/image/preview.jpg">
+<meta property="og:url" content="https://praveenwedsujatha.vercel.app">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Praveen Kumar & Sujatha Wedding Invitation">
 <meta name="twitter:description" content="Tap to view our wedding invitation.">
-<meta name="twitter:image" content="https://praveenwedsujatha.vercel.app/images/preview.jpg">
+<meta name="twitter:image" content="https://praveenwedsujatha.vercel.app/image/preview.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=IM+Fell+English:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 
 <!-- GSAP + ScrollTrigger -->
@@ -319,7 +319,7 @@ button:active{
 /* ══════════════════════════════════════════════
    INVITATION WRAPPER
 ══════════════════════════════════════════════ */
-#invitation{display:none;max-width:480px;margin:0 auto;padding-bottom:72px;}
+#invitation{display:none;max-width:480px;margin:0 auto;padding-bottom:2px;}
 #invitation.on{display:block;}
 
 /* Section reveal classes (GSAP controls opacity/transform) */
@@ -383,7 +383,7 @@ button:active{
   left:50%;
   transform:translateX(-50%);
   width:min(180px,50vw);
-  opacity:0.15;
+  opacity:0.07;
   z-index:2;
 }
 
@@ -465,10 +465,15 @@ button:active{
 .sage-line{width:min(220px,55vw);height:1.5px;background:linear-gradient(to right,transparent,rgba(100,160,60,.5),rgba(140,200,80,.7),rgba(100,160,60,.5),transparent);margin:14px auto;position:relative;z-index:2;}
 .sage-line::before{content:'✝';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:11px;color:rgba(80,140,40,.7);padding:0 8px;background:linear-gradient(160deg,#f8f4ee,#f0ece4);}
 
-.hero-date{font-family:'Cinzel',serif;font-size:11.5px;letter-spacing:.16em;color:rgba(40,70,25,.4);margin-top:12px;position:relative;z-index:2;}
+.hero-date{font-family:'Cinzel',serif;font-size:11.5px;letter-spacing:.16em;color:rgba(40,70,25,.58);margin-top:12px;position:relative;z-index:2;}
 .hero-verse{font-family:'IM Fell English',serif;font-style:italic;font-size:13.5px;color:rgba(40,70,25,.4);max-width:300px;margin:14px auto 0;line-height:1.65;position:relative;z-index:2;}
 .hero-btm{position:absolute;bottom:0;left:0;right:0;pointer-events:none;z-index:3;height:80px;background:linear-gradient(to bottom,transparent,rgba(30,80,20,.1));}
 
+
+.hero-amp{
+  margin:8px 0;
+  font-size:32px;
+}
 /* ══════════════════════════════════════════════
    STRIPE DIVIDERS
 ══════════════════════════════════════════════ */
@@ -1439,7 +1444,7 @@ Nandyal
 </div>
     <div class="verse-card">
       <p class="verse-text">&ldquo;For where two or three gather in my name, there am I with them.&rdquo;</p>
-      <p class="verse-ref">— MARK 10:9</p>
+      <p class="verse-ref">— MATTHEW 18:20</p>
     </div>
   </section>
 
@@ -1528,31 +1533,29 @@ Nandyal
       <div class="ev-photo">
         <img src="image/madhurumveppu.jpg" alt="Muhurtham"
           onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=480&h=200&fit=crop&auto=format'">
-        <div class="ev-time">08:00 pM</div>
-        <div class="ev-dress"></div>
+        <div class="ev-time">10:00 AM</div>
+        <div class="ev-dress">Dress Code: Traditional</div>
       </div>
       <div class="ev-body">
         <p class="ev-badge">Pre-Wedding</p>
 <h3 class="ev-title">Muhurtham</h3>
 <div class="ev-detail">
-Wednesday, May 20, 2026<br>
- Near Our Home<br>
-Nandyal
+  Wednesday, May 20, 2026<br>
+  Near Our Home,<br>
+  Gnanapuram, Near All Saints Church,<br>
+  Nandyal
 </div>
-      <a class="ev-map"
-href="https://www.google.com/maps/search/?api=1&query=JK+Function+Hall+Nandyal"
-target="_blank">
-View Muhurtham Location →
-</a>
+
       </div>
     </div>
+
 
     <div class="ev-card">
       <div class="ev-shimmer"></div>
       <div class="ev-photo">
         <img src="image/event-wedding.jpg" alt="Holy Matrimony"
           onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=480&h=200&fit=crop&auto=format'">
-        <div class="ev-time">11:00 aM</div>
+        <div class="ev-time">11:00 AM</div>
       </div>
       <div class="ev-body">
         <p class="ev-badge">Holy Matrimony</p>
@@ -1563,8 +1566,8 @@ Thursday, May 21, 2026<br>
 Holy Cross Cathedral Church<br>
 R.S Road, Nandyal
 </div>
-       <a class="ev-map"
-href="https://www.google.com/maps/search/?api=1&query=Holy+Cross+Cathedral+Church+RS+Road+Nandyal"
+      <a class="ev-map"
+href="https://www.google.com/maps/place/C.S.I+Holy+Cross+Cathedral+-+Nandyal/@15.4768425,78.4701083,17z/data=!4m10!1m2!2m1!1sCSI+Holy+Cross+Cathedral+Church+Nandyal!3m6!1s0x3bb44d549c02aa9f:0x4552d88d01b3debb!8m2!3d15.4764852!4d78.4706325!15sCidDU0kgSG9seSBDcm9zcyBDYXRoZWRyYWwgQ2h1cmNoIE5hbmR5YWxaKSInY3NpIGhvbHkgY3Jvc3MgY2F0aGVkcmFsIGNodXJjaCBuYW5keWFskgEJY2F0aGVkcmFsmgEkQ2hkRFNVaE5NRzluUzBWTlpuRXdaa3R6YVRadFVYTm5SUkFC4AEA-gEECCYQPA!16s%2Fg%2F11bzz3hvdx?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
 target="_blank">
 View Church Location →
 </a>
@@ -1586,8 +1589,8 @@ View Church Location →
       Nandyal
     </div>
 
-    <a class="ev-map"
-href="https://www.google.com/maps/search/?api=1&query=Ryder+Memorial+Community+Hall+Nandyal"
+   <a class="ev-map"
+href="https://www.google.com/maps/place/C.S.I+Holy+Cross+Cathedral+-+Nandyal/@15.4768425,78.4701083,17z/data=!4m10!1m2!2m1!1sCSI+Holy+Cross+Cathedral+Church+Nandyal!3m6!1s0x3bb44d549c02aa9f:0x4552d88d01b3debb!8m2!3d15.4764852!4d78.4706325!15sCidDU0kgSG9seSBDcm9zcyBDYXRoZWRyYWwgQ2h1cmNoIE5hbmR5YWxaKSInY3NpIGhvbHkgY3Jvc3MgY2F0aGVkcmFsIGNodXJjaCBuYW5keWFskgEJY2F0aGVkcmFsmgEkQ2hkRFNVaE5NRzluUzBWTlpuRXdaa3R6YVRadFVYTm5SUkFC4AEA-gEECCYQPA!16s%2Fg%2F11bzz3hvdx?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
 target="_blank">
 View Lunch Location →
 </a>
@@ -1647,12 +1650,12 @@ View Lunch Location →
 
   <div style="margin-top:20px;border-radius:12px;overflow:hidden;">
     <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.985498341477!2d78.4751015!3d15.485212200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5add8b155a2c5%3A0x2f0489af32c64062!2sJK%20Function%20Hall!5e0!3m2!1sen!2sin!4v1777739907302!5m2!1sen!2sin"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3845.1410672842417!2d78.47010829999999!3d15.476842450000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb44d549c02aa9f%3A0x4552d88d01b3debb!2sC.S.I%20Holy%20Cross%20Cathedral%20-%20Nandyal!5e0!3m2!1sen!2sin!4v1778510716572!5m2!1sen!2sin"
       width="100%" height="250" style="border:0;">
     </iframe>
   </div>
 
-  <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.985498341477!2d78.4751015!3d15.485212200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5add8b155a2c5%3A0x2f0489af32c64062!2sJK%20Function%20Hall!5e0!3m2!1sen!2sin!4v1777739907302!5m2!1sen!2sin"
+  <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3845.1410672842417!2d78.47010829999999!3d15.476842450000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb44d549c02aa9f%3A0x4552d88d01b3debb!2sC.S.I%20Holy%20Cross%20Cathedral%20-%20Nandyal!5e0!3m2!1sen!2sin!4v1778510716572!5m2!1sen!2sin"
      target="_blank"
      style="display:block;text-align:center;margin-top:14px;color:#2E7D32;">
      Open in Google Maps →
@@ -1684,7 +1687,7 @@ View Lunch Location →
       <img src="image/cross-watercolor.png" alt=""
         style="width:100%;filter:brightness(1.5) saturate(.35);" onerror="this.replaceWith(mkCross('#6aaa4a'))">
     </div>
-    <p class="footer-verse">&ldquo;Therefore what God has joined together, let no one separate.&rdquo;<br>— Mark 10:9</p>
+    <p class="footer-verse">&ldquo;Therefore what God has joined together, let no one separate.&rdquo;<br>— MATTHEW 18:20</p>
     <div style="width:min(180px,44vw);margin:0 auto 16px;position:relative;z-index:1;">
       <img src="image/floral-divider.png" alt=""
         style="width:100%;height:auto;filter:brightness(1.3) saturate(.35) opacity(.45);" onerror="this.replaceWith(mkFDiv('#5a8a3a'))">
@@ -1925,8 +1928,8 @@ function submitRSVP(){
 }
 
 /* ── SHARE ─────────────────────────────────── */
-function doWA(){window.open('https://wa.me/?text='+encodeURIComponent("You're invited to James & Sarah's Wedding! 🕊️\n"+location.href),'_blank');}
-function doCal(){window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&text=James+%26+Sarah+Wedding&dates=20261219T100000Z/20261219T230000Z&location=Christ+Church+Cathedral,+Nashville','_blank');}
+function doWA(){window.open('https://wa.me/?text='+encodeURIComponent("You're invited to Praveen & Sujatha's Wedding! 🕊️\n"+location.href),'_blank');}
+function doCal(){window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&text=Praveen+%26+Sujatha+Wedding&dates=20261219T100000Z/20261219T230000Z&location=Christ+Church+Cathedral,+Nashville','_blank');}
 function doCopy(){navigator.clipboard?navigator.clipboard.writeText(location.href).then(()=>alert('Link copied! ✓')):alert(location.href);}
 
 /* ── SCROLL PROGRESS (fallback) ────────────── */
