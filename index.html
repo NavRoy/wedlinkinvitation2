@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thottempoori Family Wedding Invitation | Praveen Kumar & Sujatha</title>
+
+<!-- Meta Preview -->
+<meta name="title" content="Praveen Kumar & Sujatha Wedding Invitation">
+<meta name="description" content="You are invited to celebrate the wedding of Praveen Kumar & Sujatha. View the invitation online.">
+
+<!-- Open Graph (WhatsApp, Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Praveen Kumar & Sujatha Wedding Invitation">
+<meta property="og:description" content="Join us to celebrate our special day. Tap to view invitation.">
+<meta property="og:image" content="images/preview.jpeg">
+<meta property="og:url" content="https://yourdomain.com/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Praveen Kumar & Sujatha Wedding Invitation">
+<meta name="twitter:description" content="Tap to view our wedding invitation.">
+<meta name="twitter:image" content="images/preview.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=IM+Fell+English:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<style>
+body{
+  overflow-x:hidden;
+}
+
+*{
+  box-sizing:border-box;
+}
+    :root{
+  --green-main:#6d1f1f;
+  --green-soft:#a94442;
+  --text-dark:#3b1f1f;
+  --text-light:rgba(80,30,30,.75);
+}
+
+:root{
+  --space-1:8px;
+  --space-2:16px;
+  --space-3:24px;
+  --space-4:40px;
+  --space-5:64px;
+}
+/* Body readability */
+body{
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Headings consistency */
+h1,h2,h3{
+  font-family:'Cinzel',serif;
+  letter-spacing:2px;
+  color:var(--green-main);
+}
+
+/* Paragraph clarity */
+p{
+  color:var(--text-light);
+}
+
+/* ══════════════════════════════════════════════
+   RESET
+══════════════════════════════════════════════ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Cormorant Garamond',Georgia,serif;background:#0a0f06;color:#1a2010;overflow-x:hidden}
+img{display:block;max-width:100%}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+a{text-decoration:none}
+button{
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+button:active{
+  transform:scale(0.96);
+}
+
+/* ══════════════════════════════════════════════
+   SCROLL PROGRESS BAR
+══════════════════════════════════════════════ */
+#prog{
+  position:fixed;top:0;left:0;height:3px;width:0%;z-index:9995;
+  background:linear-gradient(to right,#a94442,#A5D6A7,#4CAF50);
+  transition:width .1s linear;
+}
+
+/* ══════════════════════════════════════════════
+   PAGE LOAD OVERLAY
+══════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════
+   SCATTER PETALS (fixed layer)
+══════════════════════════════════════════════ */
+#petal-layer{position:fixed;inset:0;pointer-events:none;z-index:9999;overflow:hidden;}
+.spetal{position:absolute;top:-30px;animation:spetalFall linear forwards;}
+@keyframes spetalFall{
+  0%  {opacity:0;  transform:translateY(0)     rotate(0deg)   translateX(0);}
+  7%  {opacity:.85;}
+  90% {opacity:.7;}
+  100%{opacity:0;  transform:translateY(108vh) rotate(800deg) translateX(30px);}
+}
+
+/* Sparkle canvas */
+#sparkle-cv{position:fixed;inset:0;pointer-events:none;z-index:9997;}
+
+/* ══════════════════════════════════════════════
+   LIGHTBOX
+══════════════════════════════════════════════ */
+#lightbox{
+  position:fixed;inset:0;z-index:8000;
+  background:rgba(0,0,0,.96);backdrop-filter:blur(14px);
+  display:none;align-items:center;justify-content:center;padding:20px;
+}
+#lightbox.on{display:flex;animation:lbIn .25s ease;}
+@keyframes lbIn{from{opacity:0}to{opacity:1}}
+#lightbox img{max-width:100%;max-height:88vh;object-fit:contain;border:1px solid rgba(100,170,60,.22);border-radius:2px;}
+.lb-close{
+  position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;
+  border:1px solid rgba(100,170,60,.3);background:rgba(100,170,60,.08);
+  color:rgba(200,240,160,.9);font-size:18px;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+}
+
+.portrait img{
+  transition:transform .6s cubic-bezier(.22,1,.36,1);
+}
+
+.person-premium:hover img{
+  transform:scale(1.08);
+}
+
+.pname, .pmeta, .role{
+  transition:all .4s ease;
+}
+
+.person-premium:hover .pname{
+  letter-spacing:2px;
+}
+/* ══════════════════════════════════════════════
+   WRAPPER
+══════════════════════════════════════════════ */
+.ce-wrap{max-width:480px;margin:0 auto;}
+
+/* ══════════════════════════════════════════════
+   LANDING SCREEN
+   The envelope-poster.jpg is the BG
+   Text + button are CENTERED over it with z-index
+══════════════════════════════════════════════ */
+#landing{
+  position:fixed;inset:0;z-index:1000;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;padding:20px;
+  overflow:hidden;
+  transition:opacity .9s ease,transform .9s ease;
+}
+#landing.out{opacity:0;transform:scale(1.05);pointer-events:none;}
+
+/* Background: envelope poster */
+#landing-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+}
+
+#landing-bg img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  animation:bgZoom 20s ease-in-out infinite alternate;
+}
+@keyframes bgZoom{0%{transform:scale(1)}100%{transform:scale(1.06)}}
+
+/* Very subtle dark vignette — NOT too dark so button is visible */
+#landing-veil{
+  position:absolute;inset:0;z-index:1;
+  background:
+    radial-gradient(ellipse at 50% 50%,transparent 20%,rgba(0,0,0,.25) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.05) 40%,rgba(0,0,0,.35) 100%);
+}
+
+/* Scatter petals on landing */
+#land-petals{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:hidden;}
+
+/* Floral corner images */
+.ce-fc{position:absolute;z-index:3;pointer-events:none;}
+.ce-fc img{width:min(140px,32vw);height:auto;display:block;}
+.ce-fc.tl{top:0;left:0;}
+.ce-fc.tr{top:0;right:0;transform:scaleX(-1);}
+.ce-fc.bl{bottom:80px;left:0;transform:scaleY(-1);}
+.ce-fc.br{bottom:80px;right:0;transform:scale(-1,-1);}
+
+/* Music toggle */
+#land-music{
+  position:absolute;top:18px;right:16px;z-index:10;
+  display:flex;align-items:center;gap:6px;
+  background:rgba(0,0,0,.35);backdrop-filter:blur(10px);
+  border:1px solid rgba(200,240,160,.25);
+  padding:8px 16px;
+  font-family:'Cinzel',serif;font-size:9px;letter-spacing:.18em;
+  color:rgba(200,240,160,.75);
+}
+
+/* THE LANDING CONTENT — sits above everything with z-index:5 */
+#landing-content{
+  position:relative;z-index:5;
+  display:flex;flex-direction:column;align-items:center;
+  gap:0;
+  /* Slight glass panel behind text for legibility */
+  background:rgba(0,0,0,.18);
+  backdrop-filter:blur(2px);
+  border:1px solid rgba(255,255,255,.08);
+  padding:28px 32px 24px;
+  border-radius:2px;
+  max-width:340px;width:90%;
+}
+.lc-with{
+  font-family:'IM Fell English',serif;font-style:italic;
+  font-size:15px;color:rgba(255,255,255,.75);
+  margin-bottom:6px;text-shadow:0 1px 6px rgba(0,0,0,.5);
+}
+.lc-we{
+  font-family:'IM Fell English',serif;font-size:18px;
+  color:rgba(255,255,255,.85);margin-bottom:8px;
+  text-shadow:0 1px 6px rgba(0,0,0,.5);
+}
+.lc-names{
+  font-family:'Cinzel',serif;font-size:clamp(28px,8vw,38px);font-weight:700;
+  background:linear-gradient(135deg,#6aaa4a,#a8e080,#8fcc60,#a8e080,#6aaa4a);
+  background-size:200% auto;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:greenShimmer 3.5s linear infinite;
+  line-height:1.1;margin-bottom:12px;
+}
+@keyframes greenShimmer{0%{background-position:0% center}100%{background-position:200% center}}
+
+/* Floral divider */
+.ce-fdiv{width:min(180px,44vw);margin:10px auto;}
+.ce-fdiv img{width:100%;height:auto;display:block;}
+
+.lc-save{
+  font-family:'Cinzel',serif;font-size:9px;letter-spacing:.32em;
+  color:rgba(255,255,255,.45);margin-top:8px;
+}
+/* THE OPEN BUTTON — must be very visible */
+#land-open-btn{
+  margin-top:16px;
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:.28em;
+  color:#fff;
+  border:1.5px solid rgba(200,240,160,.6);
+  padding:14px 36px;
+  background:rgba(50,120,30,.45);
+  backdrop-filter:blur(8px);
+  position:relative;overflow:hidden;
+  transition:background .3s,border-color .3s,transform .2s;
+  animation:openBtnPulse 2.5s ease-in-out infinite;
+}
+@keyframes openBtnPulse{0%,100%{box-shadow:0 0 0 0 rgba(100,200,60,.4)}50%{box-shadow:0 0 0 10px rgba(100,200,60,0)}}
+#land-open-btn:hover{
+  background:rgba(60,140,35,.65);border-color:rgba(200,240,160,.9);
+  transform:translateY(-2px);
+}
+#land-open-btn::before{
+  content:'✝';display:inline-block;margin-right:8px;font-size:12px;
+}
+
+/* ══════════════════════════════════════════════
+   DEMO BAR (fixed bottom)
+══════════════════════════════════════════════ */
+.demo-bar{
+  position:fixed;bottom:0;left:0;right:0;z-index:900;
+  max-width:480px;margin:0 auto;
+  display:flex;align-items:center;
+  background:rgba(4,8,2,.97);
+  border-top:1px solid rgba(80,150,40,.32);
+  backdrop-filter:blur(18px);
+  overflow:hidden;
+}
+.demo-bar::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(to right,transparent,#4CAF50,#A5D6A7,#4CAF50,transparent);
+}
+.db-info{padding:10px 16px;flex:1;}
+.db-info-top{font-family:'Cinzel',serif;font-size:12px;font-weight:600;color:rgba(165,214,167,.9);letter-spacing:.04em;}
+.db-info-sub{font-size:11px;color:rgba(255,255,255,.22);margin-top:2px;}
+.db-btn{
+  background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:.14em;
+  padding:20px 22px;white-space:nowrap;position:relative;overflow:hidden;
+}
+.db-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent,rgba(255,255,255,.12),transparent);transform:translateX(-100%);transition:transform .5s;}
+.db-btn:hover::before{transform:translateX(100%);}
+
+/* Float music btn */
+#mfloat{
+  position:fixed;bottom:72px;right:14px;z-index:800;
+  width:44px;height:44px;border-radius:50%;
+  background:rgba(8,20,5,.95);border:1px solid rgba(80,150,40,.42);
+  color:rgba(165,214,167,.9);font-size:17px;
+  display:none;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(0,0,0,.4);backdrop-filter:blur(10px);
+  transition:transform .2s,box-shadow .2s;
+}
+#mfloat:hover{transform:scale(1.1);}
+#mfloat.vis{display:flex;}
+
+/* ══════════════════════════════════════════════
+   INVITATION WRAPPER
+══════════════════════════════════════════════ */
+#invitation{display:none;max-width:480px;margin:0 auto;padding-bottom:72px;}
+#invitation.on{display:block;}
+
+/* Section reveal classes (GSAP controls opacity/transform) */
+.sr-sec{opacity:0;transform:translateY(40px);}
+
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+
+/* ══════════════════════════════════════════════
+   HERO  — ivory/cream full height
+══════════════════════════════════════════════ */
+.ce-hero{
+  position:relative;min-height:100vh;
+  background:linear-gradient(160deg,#f8f4ee 0%,#f0ece4 40%,#eae6de 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:60px 20px 160px;overflow:hidden;
+}
+.ce-hero::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 18% 22%,rgba(120,180,80,.065) 0%,transparent 50%),
+    radial-gradient(ellipse at 82% 78%,rgba(100,160,60,.05) 0%,transparent 50%);
+  pointer-events:none;
+}
+
+.hero-church{
+  position:absolute;
+  bottom:120px;
+  left:50%;
+  transform:translateX(-50%);
+  width:min(260px,70vw);
+  opacity:0.08; /* subtle = premium */
+  z-index:1;
+}
+.hero-church img{
+  width:100%;
+  filter:brightness(1.1) contrast(1.05);
+}
+/* Diagonal texture */
+.ce-hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    transparent 70%,
+    rgba(0,0,0,0.15) 100%
+  );
+}
+
+.hero-rays{
+  position:absolute;
+  inset:0;
+  background:url('LIGHT-RAYS.png') center/cover no-repeat;
+  opacity:0.06;
+  z-index:0;
+  pointer-events:none;
+}
+.hero-couple{
+  position:absolute;
+  bottom:80px;
+  left:50%;
+  transform:translateX(-50%);
+  width:min(180px,50vw);
+  opacity:0.15;
+  z-index:2;
+}
+
+.hero-church,
+.hero-couple{
+  animation:floatY 6s ease-in-out infinite;
+}
+
+@keyframes floatY{
+  0%,100%{ transform:translate(-50%,0); }
+  50%{ transform:translate(-50%,-10px); }
+}
+
+#land-open-btn{
+  background:linear-gradient(135deg,#2E7D32,#66BB6A);
+  box-shadow:0 8px 30px rgba(80,150,40,.3);
+  border:none;
+}
+
+#land-open-btn:hover{
+  transform:translateY(-3px) scale(1.02);
+  box-shadow:0 14px 40px rgba(80,150,40,.5);
+}
+
+.hero-rays{ z-index:0; }
+.hero-church{ z-index:1; }
+.hero-couple{ z-index:2; }
+.hero-cross,
+.hero-names,
+.hero-with,
+.hero-we{ z-index:3; position:relative; }
+
+.hero-church{
+  bottom:160px;   /* move UP */
+  width:min(300px,75vw);
+  opacity:0.12;   /* slightly stronger */
+}
+
+
+.hero-couple img{
+  width:100%;
+  mask-image: linear-gradient(to top, transparent 0%, black 40%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 40%);
+}
+.hero-cross::after{
+  content:'';
+  position:absolute;
+  inset:-20px;
+  background:radial-gradient(circle, rgba(120,180,80,.25), transparent 70%);
+  z-index:-1;
+}
+
+.ce-hero::before{
+  background:
+    radial-gradient(circle at center, transparent 40%, rgba(0,0,0,.08) 100%);
+}
+/* Floral corners on hero */
+.hero-fc{position:absolute;pointer-events:none;}
+.hero-fc.tl{top:0;left:0;width:min(155px,36vw);}
+.hero-fc.tr{top:0;right:0;width:min(155px,36vw);transform:scaleX(-1);}
+.hero-fc.bl{bottom:60px;left:0;width:min(155px,36vw);transform:scaleY(-1);}
+.hero-fc.br{bottom:60px;right:0;width:min(155px,36vw);transform:scale(-1,-1);}
+.hero-fc img{width:100%;height:auto;display:block;}
+
+/* Gold frame */
+.hero-frame{position:absolute;inset:18px;border:1px solid rgba(100,150,60,.18);pointer-events:none;z-index:1;}
+.hero-frame::before{content:'';position:absolute;inset:7px;border:0.5px solid rgba(100,150,60,.08);}
+.hfc{position:absolute;color:rgba(80,140,40,.3);font-size:14px;line-height:1;}
+.hfc.tl{top:2px;left:2px}.hfc.tr{top:2px;right:2px}.hfc.bl{bottom:2px;left:2px}.hfc.br{bottom:2px;right:2px}
+
+/* Watercolor cross */
+.hero-cross{width:min(85px,20vw);margin:0 auto 20px;position:relative;z-index:2;animation:crossFloat 4.5s ease-in-out infinite;}
+.hero-with{font-family:'IM Fell English',serif;font-style:italic;font-size:16px;color:rgba(60,90,40,.65);margin-bottom:8px;position:relative;z-index:2;}
+.hero-we{font-family:'IM Fell English',serif;font-size:20px;color:rgba(40,70,25,.75);margin-bottom:8px;position:relative;z-index:2;}
+.hero-names{font-family:'Cinzel',serif;font-size:clamp(30px,8.5vw,42px);font-weight:700;color:#6d1f1f;line-height:1.1;position:relative;z-index:2;}
+.hero-amp{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:26px;color:rgba(60,120,40,.4);display:block;margin:2px 0;position:relative;z-index:2;}
+
+/* Sage line with cross */
+.sage-line{width:min(220px,55vw);height:1.5px;background:linear-gradient(to right,transparent,rgba(100,160,60,.5),rgba(140,200,80,.7),rgba(100,160,60,.5),transparent);margin:14px auto;position:relative;z-index:2;}
+.sage-line::before{content:'✝';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:11px;color:rgba(80,140,40,.7);padding:0 8px;background:linear-gradient(160deg,#f8f4ee,#f0ece4);}
+
+.hero-date{font-family:'Cinzel',serif;font-size:11.5px;letter-spacing:.16em;color:rgba(40,70,25,.4);margin-top:12px;position:relative;z-index:2;}
+.hero-verse{font-family:'IM Fell English',serif;font-style:italic;font-size:13.5px;color:rgba(40,70,25,.4);max-width:300px;margin:14px auto 0;line-height:1.65;position:relative;z-index:2;}
+.hero-btm{position:absolute;bottom:0;left:0;right:0;pointer-events:none;z-index:3;height:80px;background:linear-gradient(to bottom,transparent,rgba(30,80,20,.1));}
+
+/* ══════════════════════════════════════════════
+   STRIPE DIVIDERS
+══════════════════════════════════════════════ */
+.ce-stripe{height:5px;background:linear-gradient(to right,#0a0f06,#2E7D32,#A5D6A7,#2E7D32,#0a0f06);}
+.ce-stripe-thin{height:1px;background:linear-gradient(to right,transparent,rgba(80,150,40,.5),rgba(120,200,80,.8),rgba(80,150,40,.5),transparent);position:relative;}
+.ce-stripe-thin::after{content:'✝';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:9px;color:rgba(80,150,40,.6);padding:0 6px;background:inherit;}
+
+/* ══════════════════════════════════════════════
+   SECTION COMMONS
+══════════════════════════════════════════════ */
+.ce-sec{padding:60px 22px;position:relative;overflow:hidden;}
+.ce-sec-dark{background:linear-gradient(180deg,#1B4D10,#134010);}
+.ce-sec-light{background:linear-gradient(180deg,#fff,#f5f9f0);}
+.ce-sec-lavender{background:linear-gradient(180deg,#f5f9f0,#eef5e8);}
+.ce-sec-ivory{background:linear-gradient(180deg,#fafff7,#f5f9f0);}
+
+.ce-jali{position:absolute;inset:0;background:url('image/jali-pattern.svg') center/200px repeat;opacity:.04;pointer-events:none;z-index:0;}
+
+.sec-lbl{
+  font-family:'Cinzel',serif;
+  font-size:16px;
+  letter-spacing:.4em;
+  color:#2E7D32;
+  text-align:center;
+ margin-bottom:var(--space-2);
+
+  text-shadow:0 2px 10px rgba(120,180,80,.15);
+}
+
+.ce-sec-light{
+  background:
+    radial-gradient(circle at top, rgba(120,180,80,.06), transparent 60%),
+    linear-gradient(180deg,#fff,#f5f9f0);
+}
+.ce-ornament{width:min(200px,50vw);margin:4px auto 6px;display:block;position:relative;z-index:1;}
+.sage-line2{width:min(200px,50vw);height:1px;background:linear-gradient(to right,transparent,rgba(80,150,40,.4),rgba(120,200,80,.6),rgba(80,150,40,.4),transparent);margin:12px auto;position:relative;z-index:1;}
+
+/* ══════════════════════════════════════════════
+   SAVE THE DATE
+══════════════════════════════════════════════ */
+.sd-lbl{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.36em;color:rgba(180,230,140,.65);margin-bottom:16px;position:relative;z-index:1;text-align:center;}
+.sd-date{font-family:'Cinzel',serif;font-size:clamp(26px,7vw,36px);font-weight:700;color:rgba(200,240,160,.88);letter-spacing:.06em;line-height:1.2;position:relative;z-index:1;text-align:center;}
+.sd-location{font-family:'IM Fell English',serif;font-style:italic;font-size:16px;color:rgba(180,230,140,.5);margin-top:8px;position:relative;z-index:1;text-align:center;}
+.sd-invite{font-style:italic;font-size:15px;color:rgba(180,230,140,.42);margin:16px auto 0;position:relative;z-index:1;text-align:center;line-height:1.7;max-width:300px;}
+
+/* Countdown inside SD section */
+.cd-row{display:flex;align-items:flex-start;justify-content:center;margin-top:28px;position:relative;z-index:1;}
+.cd-unit{text-align:center;padding:0 6px;}
+.cd-box{background:rgba(255,255,255,.04);border:1px solid rgba(100,200,80,.16);padding:12px 8px 10px;min-width:60px;position:relative;overflow:hidden;}
+.cd-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,#4CAF50,transparent);}
+.cd-num{font-family:'Cinzel',serif;font-size:clamp(32px,8vw,46px);font-weight:700;color:rgba(200,240,160,.88);line-height:1;display:block;transition:transform .18s,opacity .18s;}
+.cd-num.flip{transform:translateY(-100%);opacity:0;}
+.cd-lbl{font-size:9px;letter-spacing:.2em;color:rgba(180,230,140,.35);text-transform:uppercase;margin-top:7px;display:block;}
+.cd-sep{font-family:'Cinzel',serif;font-size:clamp(26px,7vw,36px);color:rgba(80,200,60,.45);padding-top:10px;}
+
+/* ══════════════════════════════════════════════
+   COUPLE / BLESSED UNION
+══════════════════════════════════════════════ */
+.couple-row{display:flex;align-items:flex-start;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:10px;position:relative;z-index:1;}
+.person-blk{display:flex;flex-direction:column;align-items:center;max-width:148px;}
+/* Double ring with spin */
+.p-ring{width:100px;height:100px;border-radius:50%;position:relative;margin-bottom:12px;}
+.p-ring::before{content:'';position:absolute;inset:-5px;border-radius:50%;border:2px solid rgba(80,150,40,.55);animation:ringPulse 3.5s ease-in-out infinite;}
+@keyframes ringPulse{0%,100%{box-shadow:0 0 0 0 rgba(80,150,40,0)}50%{box-shadow:0 0 0 7px rgba(80,150,40,.07)}}
+.p-ring::after{content:'';position:absolute;inset:-11px;border-radius:50%;border:1px solid rgba(80,150,40,.2);}
+.p-ring-spin{position:absolute;inset:-18px;border-radius:50%;border:.5px dashed rgba(80,150,40,.18);animation:spinRing 24s linear infinite;}
+@keyframes spinRing{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.p-ring img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:2.5px solid rgba(80,150,40,.45);}
+.p-role{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.22em;color:#4CAF50;margin-bottom:6px;}
+.p-name{font-family:'Playfair Display',serif;font-size:19px;font-weight:600;color:#1B5E20;}
+.p-rel{font-style:italic;font-size:12px;color:rgba(40,100,20,.5);margin-top:2px;}
+.p-par{font-size:13px;color:rgba(30,70,15,.65);line-height:1.55;margin-top:2px;}
+.couple-mid{display:flex;flex-direction:column;align-items:center;align-self:center;margin-top:48px;gap:8px;}
+.couple-and{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:28px;color:rgba(60,120,40,.38);}
+
+/* Bible verse card */
+.verse-card{margin:24px 0 0;padding:16px 18px;border-left:3px solid rgba(80,150,40,.3);background:rgba(120,200,80,.04);text-align:left;position:relative;z-index:1;}
+.verse-text{font-family:'IM Fell English',serif;font-style:italic;font-size:15px;color:rgba(30,70,15,.7);line-height:1.75;}
+.verse-ref{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.2em;color:rgba(80,150,40,.55);margin-top:8px;}
+
+/* ══════════════════════════════════════════════
+   CELEBRATION TIMELINE  — event cards with photos
+══════════════════════════════════════════════ */
+.timeline-bible{font-family:'IM Fell English',serif;font-style:italic;font-size:13.5px;color:rgba(30,70,15,.42);text-align:center;margin-bottom:22px;line-height:1.65;position:relative;z-index:1;}
+.ev-card{
+  background:#fff;border-radius:2px;overflow:hidden;margin-bottom:10px;
+  box-shadow:0 2px 16px rgba(30,80,20,.07);border:1px solid rgba(80,150,40,.1);
+  position:relative;z-index:1;
+  transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s;
+}
+.ev-card:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(30,80,20,.14);}
+.ev-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#1B5E20,#4CAF50,#1B5E20);}
+/* Shimmer sweep */
+.ev-shimmer{position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(80,150,40,.04) 50%,transparent 65%);transform:translateX(-120%);transition:transform .65s ease;}
+.ev-card:hover .ev-shimmer{transform:translateX(180%);}
+/* Photo on top */
+.ev-photo{width:100%;height:160px;overflow:hidden;position:relative;}
+.ev-photo img{width:100%;height:100%;object-fit:cover;transition:transform .55s ease;}
+.ev-card:hover .ev-photo img{transform:scale(1.06);}
+.ev-photo::after{content:'';position:absolute;bottom:0;left:0;right:0;height:50%;background:linear-gradient(to top,rgba(10,30,5,.55),transparent);}
+.ev-time{position:absolute;bottom:10px;left:14px;z-index:1;font-family:'Cinzel',serif;font-size:11px;font-weight:600;color:rgba(200,240,160,.9);text-shadow:0 1px 4px rgba(0,0,0,.5);}
+.ev-dress{position:absolute;bottom:10px;right:14px;z-index:1;font-family:'Cinzel',serif;font-size:8.5px;letter-spacing:.14em;color:rgba(200,240,160,.75);background:rgba(20,60,10,.45);padding:3px 8px;}
+.ev-body{padding:14px 16px;}
+.ev-badge{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.22em;color:#4CAF50;margin-bottom:5px;}
+.ev-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:#1B5E20;margin-bottom:8px;}
+.ev-detail{font-size:13.5px;color:rgba(30,70,15,.7);line-height:1.78;}
+.ev-map{display:inline-flex;align-items:center;gap:4px;margin-top:10px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.14em;color:#4CAF50;border-bottom:1px solid rgba(76,175,80,.28);padding-bottom:2px;transition:color .18s,border-color .18s;}
+.ev-map:hover{color:#1B5E20;border-color:#1B5E20;}
+
+/* Aisle walk */
+.aisle-img{width:100%;display:block;filter:sepia(8%) brightness(.97) saturate(.92);position:relative;z-index:1;}
+
+/* ══════════════════════════════════════════════
+   GALLERY  (with wide first cell like real site)
+══════════════════════════════════════════════ */
+.gal-grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto;gap:3px;margin-top:16px;position:relative;z-index:1;}
+.gal-cell{aspect-ratio:1;overflow:hidden;cursor:pointer;position:relative;background:#d8e8c8;}
+.gal-cell.wide{grid-column:span 2;aspect-ratio:2/1;}
+.gal-cell img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s cubic-bezier(.22,1,.36,1);}
+.gal-cell:hover img{transform:scale(1.1);}
+.gal-overlay{position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(8,20,5,.6));opacity:0;transition:opacity .35s;display:flex;align-items:flex-end;padding:10px;}
+.gal-cell:hover .gal-overlay{opacity:1;}
+.gal-lbl{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.14em;color:rgba(165,214,167,.9);}
+
+/* ══════════════════════════════════════════════
+   RSVP
+══════════════════════════════════════════════ */
+.rsvp-intro{font-style:italic;font-size:15px;color:rgba(30,70,15,.58);text-align:center;margin-bottom:22px;line-height:1.7;max-width:340px;margin-left:auto;margin-right:auto;position:relative;z-index:1;}
+.f-label{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.2em;color:rgba(60,130,30,.65);margin-bottom:6px;display:block;position:relative;z-index:1;}
+.f-input{width:100%;padding:13px 15px;border:1px solid rgba(80,150,40,.18);border-radius:1px;background:rgba(255,255,255,.92);font-family:'Cormorant Garamond',serif;font-size:17px;color:#1a2010;outline:none;margin-bottom:14px;transition:border-color .25s,box-shadow .25s;position:relative;z-index:1;}
+.f-input:focus{border-color:rgba(80,150,40,.5);box-shadow:0 0 0 3px rgba(80,150,40,.07);}
+.f-input::placeholder{color:rgba(80,150,40,.4);}
+.attend-row{display:flex;gap:10px;margin-bottom:14px;position:relative;z-index:1;}
+.att-btn{flex:1;padding:13px 8px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.13em;border:1px solid rgba(80,150,40,.28);background:transparent;color:#2E7D32;transition:all .25s;}
+.att-btn.picked,.att-btn:hover{background:#2E7D32;color:rgba(200,240,160,.9);border-color:#2E7D32;}
+.confirm-btn{width:100%;padding:15px;background:linear-gradient(135deg,#1B5E20,#2E7D32);color:rgba(200,240,160,.9);font-family:'Cinzel',serif;font-size:11px;letter-spacing:.25em;border:none;position:relative;overflow:hidden;z-index:1;}
+.confirm-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent,rgba(255,255,255,.1),transparent);transform:translateX(-120%);transition:transform .55s;}
+.confirm-btn:hover::before{transform:translateX(120%);}
+.rsvp-ty{display:none;text-align:center;padding:28px 10px;font-style:italic;font-size:20px;color:#1B5E20;line-height:1.75;position:relative;z-index:1;}
+.ty-icon{font-size:36px;display:block;margin-bottom:10px;animation:float 3s ease-in-out infinite;}
+
+/* ══════════════════════════════════════════════
+   SHARE
+══════════════════════════════════════════════ */
+.share-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;position:relative;z-index:1;}
+.sh-btn{padding:11px 20px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.14em;border:1px solid rgba(80,150,40,.22);background:transparent;color:#2E7D32;transition:all .25s;}
+.sh-btn:hover{background:#2E7D32;color:rgba(200,240,160,.9);border-color:#2E7D32;}
+.sh-btn.wa{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border-color:transparent;}
+.sh-btn.wa:hover{opacity:.88;}
+
+/* ══════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════ */
+.ce-footer{background:linear-gradient(180deg,#1B4D10,#0f3008);text-align:center;position:relative;overflow:hidden;}
+.ce-footer::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(120,200,60,.07) 0%,transparent 65%);pointer-events:none;}
+.footer-cross{width:min(55px,13vw);margin:0 auto 18px;position:relative;z-index:1;opacity:.55;}
+.footer-verse{font-family:'IM Fell English',serif;font-style:italic;font-size:13.5px;color:rgba(180,230,140,.42);max-width:280px;margin:0 auto 18px;line-height:1.65;position:relative;z-index:1;}
+.footer-names{font-family:'Cinzel',serif;font-size:16px;font-weight:600;color:rgba(200,240,160,.75);margin-bottom:4px;position:relative;z-index:1;}
+.footer-date{font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:.2em;color:rgba(180,230,140,.28);margin-bottom:14px;position:relative;z-index:1;}
+.footer-brand{font-style:italic;font-size:13px;color:rgba(180,230,140,.28);position:relative;z-index:1;}
+.footer-brand a{color:rgba(200,240,160,.5);}
+
+@media(max-width:768px){
+  .center-symbol{
+    display:none;
+  }
+}
+
+@media(max-width:768px){
+
+  .portrait{
+    width:140px;
+    height:170px;
+    margin:auto;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .person-premium{
+    margin-bottom:24px;
+  }
+
+  .pname{
+    margin-top:6px;
+  }
+
+  .pmeta{
+    margin-top:4px;
+    line-height:1.5;
+  }
+
+}
+
+.ce-sec{
+  position:relative;
+   margin-top:-30px;
+  padding-top:80px;
+  border-radius:30px 30px 0 0;
+  z-index:1;
+}
+
+.ce-sec{
+  padding:var(--space-5) var(--space-3);
+}
+
+.ce-footer{
+  background:
+    linear-gradient(rgba(15,48,8,.92), rgba(15,48,8,.95)),
+    url('images/assets/church.png') center/cover no-repeat;
+  padding:80px 20px 60px;
+}
+
+.ce-footer::before{
+  content:'';
+  position:absolute;
+  top:-80px;
+  left:0;
+  right:0;
+  height:120px;
+  background:linear-gradient(to bottom, transparent, rgba(15,48,8,0.95));
+}
+
+.ce-footer::after{
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:260px;
+  height:260px;
+  
+  opacity:0.08;
+  filter:blur(1px);
+}
+
+.footer-cross{
+  opacity:0.8;
+  filter:drop-shadow(0 0 12px rgba(120,200,80,.4));
+  animation:crossFloat 4s ease-in-out infinite;
+}
+
+.footer-names::after{
+  content:'';
+  display:block;
+  width:80px;
+  height:1px;
+  margin:10px auto;
+  background:linear-gradient(to right, transparent, #A5D6A7, transparent);
+}
+
+.ce-footer{
+  overflow:hidden;
+}
+
+.ce-footer span.particle{
+  position:absolute;
+  width:3px;
+  height:3px;
+
+  border-radius:50%;
+  animation:floatUp 8s linear infinite;
+}
+
+.ce-footer{
+  background:linear-gradient(
+    to bottom,
+    #e8f2df 0%,
+    #1B4D10 40%,
+    #0f3008 100%
+  );
+}
+
+
+@keyframes floatUp{
+  from{ transform:translateY(0); opacity:0; }
+  20%{ opacity:1; }
+  to{ transform:translateY(-200px); opacity:0; }
+}
+
+@media(max-width:380px){.cd-unit{padding:0 3px;}.cd-box{min-width:50px;padding:10px 5px 8px;}}
+
+.ce-hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at center,
+      rgba(255,255,255,0.9) 0%,
+      rgba(255,255,255,0.4) 30%,
+      rgba(0,0,0,0.15) 100%);
+  z-index:0;
+}
+
+.hero-church{
+  bottom:140px;
+  width:min(320px,80vw);
+  opacity:0.18;   /* increase visibility */
+  filter:blur(0.3px) brightness(1.05);
+}
+
+.ce-hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    transparent 60%,
+    rgba(0,0,0,0.25) 100%
+  );
+  z-index:1;
+}
+
+.hero-names{
+  font-size:clamp(38px,10vw,54px);
+  letter-spacing:5px;
+  color:#1B5E20;
+
+  text-shadow:
+    0 2px 6px rgba(255,255,255,0.6),
+    0 6px 20px rgba(0,0,0,0.15);
+}
+
+.hero-verse,
+.sd-invite,
+.timeline-bible{
+  color:rgba(30,70,15,.75);
+}
+.hero-names::after{
+  content:'';
+  position:absolute;
+  inset:-10px;
+  background:radial-gradient(circle, rgba(120,180,80,0.15), transparent 70%);
+  z-index:-1;
+}
+
+.hero-couple{
+  opacity:0.12;
+  filter:blur(0.5px) brightness(0.95);
+}
+
+
+.ce-hero::after{
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(120,180,80,.15) 2px, transparent 3px),
+    radial-gradient(circle at 70% 60%, rgba(120,180,80,.12) 2px, transparent 3px);
+  background-size:200px 200px;
+
+}
+
+
+.sec-lbl{
+  font-family:'Cinzel',serif;
+  font-size:18px;
+  letter-spacing:.5em;
+  color:#2E7D32;
+  text-align:center;
+  margin-bottom:10px;
+
+  position:relative;
+}
+
+.sec-lbl::after{
+  content:'';
+  display:block;
+  width:60px;
+  height:1px;
+  margin:10px auto 0;
+  background:linear-gradient(to right,transparent,#4CAF50,transparent);
+}
+
+
+.hero-fc.tl{
+  top:0;
+  left:0;
+  transform:none;
+}
+
+.hero-fc.tr{
+  top:0;
+  right:0;
+  transform:scaleX(-1);
+}
+
+.hero-fc.bl{
+  bottom:60px;
+  left:0;
+  transform:scaleY(-1);
+}
+
+.hero-fc.br{
+  bottom:60px;
+  right:0;
+  transform:scale(-1,-1);
+}
+
+
+.hero-family{
+  font-family:'Cinzel',serif;
+  font-size:12px;
+  letter-spacing:.35em;
+  text-transform:uppercase;
+
+  color:#e6dccb; /* soft gold tone */
+  opacity:.9;
+
+  margin-bottom:8px;
+
+  position:relative;
+}
+
+.hero-family{
+  line-height:1.6;
+}
+
+/* subtle highlight line */
+.hero-family::after{
+  content:'';
+  display:block;
+  width:60px;
+  height:1px;
+  margin:6px auto 0;
+  background:linear-gradient(to right, transparent, #c8b68a, transparent);
+}
+
+@keyframes floatParticles{
+  from{background-position:0 0,0 0;}
+  to{background-position:180px 180px,-180px 180px;}
+}
+
+.hero-family{
+  font-family:'Cinzel',serif;
+  font-size:11px;
+  letter-spacing:.42em;
+  text-transform:uppercase;
+
+  color:rgba(255,245,225,.88);
+
+  line-height:1.9;
+
+  margin-bottom:12px;
+
+  position:relative;
+
+  text-shadow:
+    0 1px 2px rgba(0,0,0,.25),
+    0 4px 12px rgba(0,0,0,.18);
+
+  animation:fadeGlow 4s ease-in-out infinite alternate;
+}
+
+/* Elegant divider */
+.hero-family::before,
+.hero-family::after{
+  content:'';
+  display:block;
+  width:70px;
+  height:1px;
+  margin:10px auto;
+
+  background:linear-gradient(
+    to right,
+    transparent,
+    rgba(215,190,140,.9),
+    transparent
+  );
+}
+
+/* soft glow movement */
+@keyframes fadeGlow{
+  from{
+    opacity:.78;
+    letter-spacing:.38em;
+  }
+
+  to{
+    opacity:1;
+    letter-spacing:.42em;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Page load overlay -->
+
+
+<!-- Progress bar -->
+<div id="prog"></div>
+
+<!-- BG music -->
+<audio id="bgm" loop preload="none">
+  <source src="image/kalyaname-vaibhogame-.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Sparkle canvas -->
+<canvas id="sparkle-cv"></canvas>
+
+<!-- Petal layer -->
+<div id="petal-layer"></div>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLB()">
+  <div class="lb-close" onclick="closeLB()">✕</div>
+  <img id="lb-img" src="" alt="">
+</div>
+
+<!-- ╔════════════════════════════════════════════
+     LANDING SCREEN
+════════════════════════════════════════════╗ -->
+<div id="landing">
+  <!-- BG: envelope-poster.jpg -->
+  <div id="landing-bg">
+  <img src="image/envelope-image.png" alt="Wedding Envelope">
+</div>
+  <!-- Vignette — subtle -->
+  <div id="landing-veil"></div>
+  <!-- Scatter petals -->
+  <div id="land-petals"></div>
+
+  <!-- Floral corner images -->
+  <div class="ce-fc tl"><img src="image/floral-corner.png" alt="" onerror="this.replaceWith(mkFC())"></div>
+  <div class="ce-fc tr"><img src="image/floral-corner.png" alt="" onerror="this.replaceWith(mkFC())"></div>
+  <div class="ce-fc bl"><img src="image/floral-corner.png" alt="" onerror="this.replaceWith(mkFC())"></div>
+  <div class="ce-fc br"><img src="image/floral-corner.png" alt="" onerror="this.replaceWith(mkFC())"></div>
+
+  <!-- Music toggle -->
+  <button id="land-music" onclick="toggleMusic()">♪ Sound Off</button>
+
+  <!-- ★ THE LANDING CONTENT BOX — z-index:5, always visible ★ -->
+  <div id="landing-content">
+    <!-- Watercolor cross -->
+    <div style="width:min(70px,16vw);margin:0 auto 14px;animation:crossFloat 4s ease-in-out infinite;">
+      <img src="image/cross-watercolor.png" alt=""
+        style="width:100%;height:auto;" onerror="this.replaceWith(mkCross())">
+    </div>
+<p class="hero-family">Thottempoori Family’s<br>Wedding Invitation</p>
+ 
+
+    <!-- Floral divider -->
+    <div class="ce-fdiv">
+      <img src="image/floral-divider.png" alt=""
+        onerror="this.replaceWith(mkFDiv())">
+    </div>
+
+   
+
+    <!-- OPEN INVITATION BUTTON — BIG AND VISIBLE -->
+    <button id="land-open-btn" onclick="openInv()">Open Invitation</button>
+  </div>
+
+</div>
+
+<!-- ╔════════════════════════════════════════════
+     FULL INVITATION
+════════════════════════════════════════════╗ -->
+<div id="invitation">
+
+  <!-- ── HERO ───────────────────────────────── -->
+  <section class="ce-hero sr-sec">
+    <div class="hero-fc tl"><img src="image/floral-corner.png" alt="" onerror="this.replaceWith(mkFC())"></div>
+    <div class="hero-fc tr"><img src="image/floral-corner.png" alt=""  onerror="this.replaceWith(mkFC())"></div>
+    <div class="hero-fc bl"><img src="image/floral-corner.png" alt=""  onerror="this.replaceWith(mkFC())"></div>
+    <div class="hero-fc br"><img src="image/floral-corner.png" alt=""  onerror="this.replaceWith(mkFC())"></div>
+    <div class="hero-frame"><span class="hfc tl">✦</span><span class="hfc tr">✦</span><span class="hfc bl">✦</span><span class="hfc br">✦</span></div>
+    <div class="hero-cross">
+      <img src="image/cross-watercolor.png" alt="" style="width:100%;" onerror="this.replaceWith(mkCross())">
+    </div>
+<div class="hero-rays"></div>
+
+<div class="hero-church">
+  <img src="image/church.png" alt="church">
+</div>
+
+<div class="hero-couple">
+  <img src="image/christian-bride-groom2.jpg" alt="Couple">
+</div>
+
+    <p class="hero-with">Together with our families</p>
+    <p class="hero-we">We Are Getting Married</p>
+
+<div class="hero-names">Praveen Kumar</div>
+
+<span class="hero-amp">&amp;</span>
+
+<div class="hero-names">Sujatha</div>
+
+<p class="hero-date">THURSDAY, MAY 21, 2026</p>
+
+<p class="hero-verse">
+Holy Cross Cathedral Church<br>
+R.S Road, Nandyal
+</p>
+    <div class="hero-btm"></div>
+  </section>
+
+  <!-- ── SAVE THE DATE + COUNTDOWN ─────────── -->
+  <section class="ce-sec ce-sec-dark sr-sec">
+    <div class="ce-jali"></div>
+    <!-- Petals inside dark section -->
+    <div id="sd-petals" style="position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:2;"></div>
+    <p class="sd-lbl">SAVE THE DATE</p>
+    <div style="width:min(180px,44vw);margin:0 auto 16px;position:relative;z-index:1;">
+      <img src="image/floral-divider.png" alt=""
+        style="width:100%;height:auto;filter:brightness(1.4) saturate(.4);" onerror="this.replaceWith(mkFDiv('#a8d48a'))">
+    </div>
+<div class="sd-date">Thursday<br>May 21, 2026</div>
+<p class="sd-location">
+Holy Cross Cathedral Church<br>
+Nandyal
+</p>
+    <p class="sd-invite">We invite you to celebrate the beginning of our forever. Your presence will make our celebration truly special.</p>
+
+    
+    <p style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:.26em;color:rgba(180,230,140,.45);margin-top:28px;margin-bottom:14px;text-align:center;position:relative;z-index:1;">Counting down to our special day</p>
+    <div class="cd-row">
+      <div class="cd-unit"><div class="cd-box"><span class="cd-num" id="cd-d">00</span></div><span class="cd-lbl">Days</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-unit"><div class="cd-box"><span class="cd-num" id="cd-h">00</span></div><span class="cd-lbl">Hours</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-unit"><div class="cd-box"><span class="cd-num" id="cd-m">00</span></div><span class="cd-lbl">Mins</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-unit"><div class="cd-box"><span class="cd-num" id="cd-s">00</span></div><span class="cd-lbl">Secs</span></div>
+    </div>
+    <p style="font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:.22em;color:rgba(180,230,140,.32);margin-top:20px;text-align:center;position:relative;z-index:1;">Join the Celebration</p>
+  </section>
+
+  <div class="ce-stripe"></div>
+ <style> .couple-modern{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+/* Cards */
+.person-card{
+  position:relative;
+  border-radius:18px;
+  padding:16px;
+  width:155px;
+  text-align:center;
+  overflow:hidden;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.08),
+    inset 0 0 0 1px rgba(100,150,60,.1);
+
+  transition:all .4s cubic-bezier(.22,1,.36,1);
+}
+
+.person-card::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at top, rgba(120,180,80,.15), transparent 60%);
+  opacity:0;
+  transition:.4s;
+}
+
+.person-card:hover::before{
+  opacity:1;
+}
+
+.person-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.18),
+    0 0 0 1px rgba(120,180,80,.2);
+}
+/* Image */
+.img-wrap{
+  position:relative;
+  height:170px;
+  border-radius:14px;
+  overflow:hidden;
+  margin-bottom:12px;
+}
+
+.img-wrap::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,.3), transparent 60%);
+}
+
+.img-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transform:scale(1.05);
+  transition:.5s;
+}
+
+.person-card:hover .img-wrap img{
+  transform:scale(1.12);
+}
+
+/* Text */
+.role{
+  font-size:9px;
+  letter-spacing:.2em;
+  color:#4CAF50;
+}
+
+.name{
+  font-family:'Playfair Display',serif;
+  font-size:19px;
+  color:#1B5E20;
+  margin-top:6px;
+
+  text-shadow:
+    0 2px 10px rgba(120,180,80,.2);
+}
+
+.meta{
+  font-size:12px;
+  color:rgba(30,70,15,.6);
+  margin-top:4px;
+}
+
+/* Center Cross */
+.couple-center{
+  font-size:22px;
+  color:rgba(80,140,40,.5);
+}
+
+/* MOBILE FIX (side by side always) */
+@media(max-width:480px){
+  .couple-modern{
+    flex-wrap:nowrap;
+  }
+  .person-card{
+    width:48%;
+  }
+}
+
+
+.section-header{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  margin-bottom:14px;
+}
+
+
+.section-header p{
+  position:relative;
+  padding:6px 14px;
+  background:rgba(255,255,255,0.6);
+  backdrop-filter:blur(6px);
+  border-radius:20px;
+}
+
+.section-header .line{
+  width:120px;
+  height:1px;
+  background:linear-gradient(
+    to right,
+    transparent,
+    #4CAF50,
+    transparent
+  );
+}
+
+.section-header p::after{
+  content:'✝';
+  display:block;
+  font-size:10px;
+  color:rgba(80,150,40,.6);
+  margin-top:4px;
+}
+
+.center-cross{
+  font-size:20px;
+  color:#4CAF50;
+  padding:10px;
+  border-radius:50%;
+  background:rgba(120,180,80,.1);
+  box-shadow:0 0 20px rgba(120,180,80,.2);
+}
+
+
+
+.couple-premium{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  margin-top:20px;
+  flex-wrap:wrap;
+}
+
+/* Portrait style */
+.portrait{
+  width:150px;
+  height:190px;
+  border-radius:80px 80px 0 0;
+  overflow:hidden;
+  position:relative;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.12);
+}
+
+.portrait::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,.35), transparent 60%);
+}
+
+.person-premium{
+  text-align:center;
+  max-width:170px;
+}
+
+.portrait img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+
+
+/* Role */
+.role{
+  font-size:9px;
+  letter-spacing:.3em;
+  color:#4CAF50;
+  margin-top:10px;
+}
+
+/* Name */
+.pname{
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  color:#1a1a1a;
+  letter-spacing:1px;
+  margin-top:6px;
+}
+
+/* Meta */
+.pmeta{
+  font-size:13px;
+  color:rgba(30,70,15,.6);
+  margin-top:6px;
+  line-height:1.6;
+}
+
+.pmeta{
+  color:rgba(0,0,0,0.6);
+}
+.role{
+  color:#6aaa4a;
+}
+/* Center cross */
+.center-symbol{
+  font-size:22px;
+  color:#4CAF50;
+  opacity:.6;
+}
+
+.sec-lbl{
+  position:relative;
+}
+
+.sec-lbl::before{
+  content:'✝';
+  display:block;
+  font-size:12px;
+  margin-bottom:6px;
+  color:rgba(80,150,40,.5);
+}
+
+.mobile-divider{
+  width:60px;
+  height:1px;
+  background:linear-gradient(to right,transparent,#4CAF50,transparent);
+  margin:20px auto;
+  opacity:0.6;
+}
+
+@media(min-width:768px){
+  .mobile-divider{
+    display:none;
+  }
+}
+
+@media(max-width:768px){
+
+  .pname{
+    font-size:20px;
+  }
+
+  .pmeta{
+    font-size:13px;
+  }
+
+  .role{
+    font-size:10px;
+    letter-spacing:.25em;
+  }
+
+}
+
+/* =========================================
+   BRIDE & GROOM SIDE BY SIDE MOBILE FIX
+========================================= */
+
+@media(max-width:768px){
+
+  .couple-premium{
+    display:flex;
+    flex-direction:row !important;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:nowrap;
+    gap:12px;
+  }
+
+ 
+
+</style>
+  <!-- ── BLESSED UNION ─────────────────────── -->
+  <section class="ce-sec ce-sec-light sr-sec">
+    <p class="sec-lbl">Blessed Union</p>
+    <div class="ce-ornament">
+      <img src="image/floral-divider.png" alt="" style="width:100%;height:auto;" onerror="this.replaceWith(mkFDiv())">
+    </div>
+    <p style="font-family:'IM Fell English',serif;font-style:italic;font-size:15px;color:rgba(30,70,15,.52);text-align:center;margin-bottom:20px;position:relative;z-index:1;">With the blessings of our families</p>
+<div class="couple-premium">
+
+  <div class="person-premium">
+    <div class="portrait">
+      <img src="image/praveen.jpeg">
+    </div>
+    <p class="role">THE GROOM</p>
+   <h2 class="pname">Praveen Kumar</h2>
+    <p class="pmeta">
+      Son of<br>
+      Mr. Thottempoori Manohar & Mrs. Thottempoori Aruna<br>
+      Nandyal
+    </p>
+  </div>
+
+  <div class="center-symbol">✝</div>
+  <div class="mobile-divider"></div>
+
+  <div class="person-premium">
+    <div class="portrait">
+      <img src="image/sujatha.jpeg">
+    </div>
+    <p class="role">THE BRIDE</p>
+    <h2 class="pname">Sujatha</h2>
+    <p class="pmeta">
+      Daughter of<br>
+      Mr. Perumalla Srinivasulu & Mrs. Perumalla Mariyamma<br>
+      Sanjamala, Nandyal Dist.
+    </p>
+  </div>
+
+</div>
+    <div class="verse-card">
+      <p class="verse-text">&ldquo;For where two or three gather in my name, there am I with them.&rdquo;</p>
+      <p class="verse-ref">— MARK 10:9</p>
+    </div>
+  </section>
+
+  
+
+  <section class="ce-sec ce-sec-lavender">
+
+
+  <div style="
+  text-align:center;
+  margin-top:10px;
+  margin-bottom:22px;
+">
+
+  <p style="
+    font-family:'Cinzel',serif;
+    font-size:11px;
+    letter-spacing:.35em;
+    color:#2E7D32;
+    margin-bottom:10px;
+    position:relative;
+  ">
+    INVITED BY
+  </p>
+
+  <!-- 🔥 THIS IS THE MISSING LINE -->
+  <div style="
+    width:80px;
+    height:1px;
+    margin:8px auto 14px;
+    background:linear-gradient(to right, transparent, #4CAF50, transparent);
+    opacity:0.6;
+  "></div>
+
+  <p style="
+    font-family:'Playfair Display',serif;
+    font-size:18px;
+    color:#1B5E20;
+    line-height:1.6;
+  ">
+    Mr. Thottempoori Manohar & Mrs. Thottempoori Aruna
+  </p>
+
+  <p style="
+    font-size:13px;
+    color:rgba(30,70,15,.6);
+    margin-top:4px;
+  ">
+    Parents of the Groom
+  </p>
+
+</div>
+
+  <div style="
+    margin-top:20px;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,0.15);
+  ">
+  <p class="sec-lbl">with Our Family</p>
+    <img src="image/family.jpeg" style="width:100%;height:auto;">
+  </div>
+
+  <p style="
+    text-align:center;
+    margin-top:12px;
+    font-style:italic;
+    color:rgba(30,70,15,.6);
+  ">
+    Surrounded by love and blessings
+  </p>
+</section>
+
+  <div class="ce-stripe-thin"></div>
+
+  <!-- ── CELEBRATION TIMELINE ──────────────── -->
+  <section class="ce-sec ce-sec-lavender sr-sec">
+  <p class="sec-lbl">Wedding Details</p>
+     <div class="ce-ornament">
+      <img src="image/floral-divider.png" alt="" style="width:100%;height:auto;" onerror="this.replaceWith(mkFDiv())">
+    </div>
+    <p class="timeline-bible">&ldquo;Two are better than one.&rdquo; — Ecclesiastes 4:9</p>
+
+    <div class="ev-card">
+      <div class="ev-shimmer"></div>
+      <div class="ev-photo">
+        <img src="image/madhurumveppu.jpg" alt="Muhurtham"
+          onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=480&h=200&fit=crop&auto=format'">
+        <div class="ev-time">10:00 AM</div>
+        <div class="ev-dress">Dress Code: Traditional</div>
+      </div>
+      <div class="ev-body">
+        <p class="ev-badge">Pre-Wedding</p>
+<h3 class="ev-title">Muhurtham</h3>
+<div class="ev-detail">
+Wednesday, May 20, 2026<br>
+ Near Our Home<br>
+Nandyal
+</div>
+      <a class="ev-map"
+href="https://www.google.com/maps/search/?api=1&query=JK+Function+Hall+Nandyal"
+target="_blank">
+View Muhurtham Location →
+</a>
+      </div>
+    </div>
+
+    <div class="ev-card">
+      <div class="ev-shimmer"></div>
+      <div class="ev-photo">
+        <img src="image/event-wedding.jpg" alt="Holy Matrimony"
+          onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=480&h=200&fit=crop&auto=format'">
+        <div class="ev-time">11:00 PM</div>
+      </div>
+      <div class="ev-body">
+        <p class="ev-badge">Holy Matrimony</p>
+       <h3 class="ev-title">Wedding Ceremony</h3>
+<div class="ev-detail">
+Thursday, May 21, 2026<br>
+11:00 AM<br>
+Holy Cross Cathedral Church<br>
+R.S Road, Nandyal
+</div>
+       <a class="ev-map"
+href="https://www.google.com/maps/search/?api=1&query=Holy+Cross+Cathedral+Church+RS+Road+Nandyal"
+target="_blank">
+View Church Location →
+</a>
+      </div>
+    </div>
+
+    <div class="ev-card">
+
+  <div class="ev-body">
+
+    <p class="ev-badge">Reception Lunch</p>
+
+    <h3 class="ev-title">Lunch</h3>
+
+    <div class="ev-detail">
+      12:30 PM<br>
+      Ryder Memorial Community Hall<br>
+      Opp. Holy Cross Cathedral Church<br>
+      Nandyal
+    </div>
+
+    <a class="ev-map"
+href="https://www.google.com/maps/search/?api=1&query=Ryder+Memorial+Community+Hall+Nandyal"
+target="_blank">
+View Lunch Location →
+</a>
+
+    
+
+  </div>
+
+</div>
+
+
+
+    <!-- Aisle walk -->
+    <img class="aisle-img" src="image/aisle-walk.png" alt="Aisle walk" loading="lazy" onerror="this.style.display='none'">
+  </section>
+
+  <div class="ce-stripe"></div>
+
+    <!-- ── GALLERY ───────────────────────────── -->
+  <section class="ce-sec ce-sec-ivory sr-sec">
+    <p class="sec-lbl">Our Gallery</p>
+    <div class="ce-ornament">
+      <img src="image/floral-divider.png" alt="" style="width:100%;height:auto;" onerror="this.replaceWith(mkFDiv())">
+    </div>
+    <div class="gal-grid">
+      <div class="gal-cell wide" onclick="openLB('image/gallery1.jpeg')">
+        <img src="image/gallery1.jpeg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=400&fit=crop'">
+        <div class="gal-overlay"><span class="gal-lbl">Together ✦</span></div>
+      </div>
+      <div class="gal-cell" onclick="openLB('image/gallery2.jpeg')">
+        <img src="image/gallery2.jpeg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=400&h=400&fit=crop'">
+        <div class="gal-overlay"><span class="gal-lbl"></span></div>
+      </div>
+      <div class="gal-cell" onclick="openLB('image/gallery3.jpeg')">
+        <img src="image/gallery3.jpeg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=400&fit=crop'">
+        <div class="gal-overlay"><span class="gal-lbl"></span></div>
+      </div>
+      <div class="gal-cell" onclick="openLB('image/gallery4.jpeg')">
+        <img src="image/gallery4.jpeg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1609501676725-7186f017a4b7?w=400&h=400&fit=crop'">
+        <div class="gal-overlay"><span class="gal-lbl"></span></div>
+      </div>
+      <div class="gal-cell" onclick="openLB('image/gallery5.jpeg')">
+        <img src="image/gallery5.jpeg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&h=400&fit=crop'">
+        <div class="gal-overlay"><span class="gal-lbl"></span></div>
+      </div>
+      <div class="gal-cell" onclick="openLB('image/gallery6.jpeg')">
+        <img src="image/gallery6.jpeg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&h=400&fit=crop'">
+        <div class="gal-overlay"><span class="gal-lbl"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ce-stripe-thin"></div>
+
+<section class="ce-sec ce-sec-light">
+  <p class="sec-lbl">Venue Location</p>
+
+  <div style="margin-top:20px;border-radius:12px;overflow:hidden;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.985498341477!2d78.4751015!3d15.485212200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5add8b155a2c5%3A0x2f0489af32c64062!2sJK%20Function%20Hall!5e0!3m2!1sen!2sin!4v1777739907302!5m2!1sen!2sin"
+      width="100%" height="250" style="border:0;">
+    </iframe>
+  </div>
+
+  <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.985498341477!2d78.4751015!3d15.485212200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5add8b155a2c5%3A0x2f0489af32c64062!2sJK%20Function%20Hall!5e0!3m2!1sen!2sin!4v1777739907302!5m2!1sen!2sin"
+     target="_blank"
+     style="display:block;text-align:center;margin-top:14px;color:#2E7D32;">
+     Open in Google Maps →
+  </a>
+</section>
+
+
+
+  <!-- ── SHARE ─────────────────────────────── -->
+  <section class="ce-sec ce-sec-lavender sr-sec" style="padding:32px 22px;border-top:1px solid rgba(80,150,40,.1);">
+    <p class="sec-lbl">Share This Invitation</p>
+    <p style="font-style:italic;font-size:14px;color:rgba(30,70,15,.45);text-align:center;margin-top:5px;position:relative;z-index:1;">Spread the joy with loved ones</p>
+    <div class="share-row">
+      <button class="sh-btn wa" onclick="doWA()">💚 WhatsApp</button>
+      <button class="sh-btn" onclick="doCal()">📅 Calendar</button>
+      <button class="sh-btn" onclick="doCopy()">🔗 Copy Link</button>
+    </div>
+    <div class="verse-card" style="margin-top:20px;position:relative;z-index:1;">
+      <p class="verse-text">&ldquo;A threefold chord is not quickly broken.&rdquo;</p>
+      <p class="verse-ref">— ECCLESIASTES 4:12</p>
+    </div>
+  </section>
+
+  <div class="ce-stripe"></div>
+
+  <!-- ── FOOTER ────────────────────────────── -->
+  <footer class="ce-footer">
+    <div class="footer-cross">
+      <img src="image/cross-watercolor.png" alt=""
+        style="width:100%;filter:brightness(1.5) saturate(.35);" onerror="this.replaceWith(mkCross('#6aaa4a'))">
+    </div>
+    <p class="footer-verse">&ldquo;Therefore what God has joined together, let no one separate.&rdquo;<br>— Mark 10:9</p>
+    <div style="width:min(180px,44vw);margin:0 auto 16px;position:relative;z-index:1;">
+      <img src="image/floral-divider.png" alt=""
+        style="width:100%;height:auto;filter:brightness(1.3) saturate(.35) opacity(.45);" onerror="this.replaceWith(mkFDiv('#5a8a3a'))">
+    </div>
+<p class="footer-names">Praveen Kumar & Sujatha</p>
+<p class="footer-date">MAY 21, 2026 · NANDYAL</p>
+    <p class="footer-brand">Made with love by <a href="https://wedding-invitation-olive-five.vercel.app/">MyWedLink</a></p>
+  </footer>
+
+
+
+</div><!-- /invitation -->
+
+<button id="mfloat" onclick="toggleMusic()">🎵</button>
+
+<script>
+/* ── SVG FALLBACKS ─────────────────────────── */
+function mkCross(c='#5a8a3a'){
+  const d=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  d.setAttribute('viewBox','0 0 60 75');d.style.cssText='width:100%;height:auto;display:block;';
+  d.innerHTML=`<defs><linearGradient id="cg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="${c}" stop-opacity=".85"/><stop offset="100%" stop-color="${c}" stop-opacity=".5"/></linearGradient></defs><rect x="24" y="0" width="12" height="75" rx="4" fill="url(#cg2)"/><rect x="6" y="20" width="48" height="12" rx="4" fill="url(#cg2)"/>`;
+  return d;
+}
+function mkFDiv(c='#6aaa4a'){
+  const d=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  d.setAttribute('viewBox','0 0 200 22');d.style.cssText='width:100%;height:auto;display:block;';
+  d.innerHTML=`<line x1="0" y1="11" x2="60" y2="11" stroke="${c}" stroke-width="0.7" opacity="0.5"/><circle cx="70" cy="11" r="4" fill="${c}" opacity="0.4"/><circle cx="84" cy="7" r="3" fill="${c}" opacity="0.35"/><circle cx="100" cy="11" r="6" fill="${c}" opacity="0.5"/><circle cx="116" cy="7" r="3" fill="${c}" opacity="0.35"/><circle cx="130" cy="11" r="4" fill="${c}" opacity="0.4"/><line x1="140" y1="11" x2="200" y2="11" stroke="${c}" stroke-width="0.7" opacity="0.5"/>`;
+  return d;
+}
+function mkFC(){
+  const d=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  d.setAttribute('viewBox','0 0 140 140');d.style.cssText='width:100%;height:auto;display:block;';
+  d.innerHTML=`<ellipse cx="14" cy="70" rx="11" ry="62" fill="rgba(100,170,60,.22)" transform="rotate(-15 14 70)"/><ellipse cx="70" cy="14" rx="62" ry="11" fill="rgba(100,170,60,.18)"/><ellipse cx="38" cy="38" rx="28" ry="52" fill="rgba(120,190,70,.14)" transform="rotate(-45 38 38)"/><circle cx="12" cy="12" r="9" fill="rgba(100,170,60,.22)"/><circle cx="25" cy="7" r="5" fill="rgba(140,210,80,.18)"/>`;
+  return d;
+}
+
+/* ── SCATTER PETALS ────────────────────────── */
+function mkPetal(){
+  const c=['rgba(255,255,255,.88)','rgba(240,250,230,.85)','rgba(220,240,200,.8)','rgba(255,250,245,.85)'];
+  return `<svg viewBox="0 0 16 22" xmlns="http://www.w3.org/2000/svg"><path d="M8 1C12 4,14 11,8 21C2 11,4 4,8 1Z" fill="${c[Math.floor(Math.random()*c.length)]}"/><path d="M8 1C8 7,8 14,8 21" stroke="rgba(180,220,140,.3)" stroke-width="0.4" fill="none"/></svg>`;
+}
+function spawnP(id){
+  const l=document.getElementById(id);if(!l)return;
+  const el=document.createElement('div');el.className='spetal';
+  const sz=9+Math.random()*12,dur=6+Math.random()*10,del=Math.random()*3;
+  el.style.cssText=`left:${Math.random()*100}%;width:${sz}px;height:${sz*1.4}px;animation-duration:${dur}s;animation-delay:${del}s;`;
+  el.innerHTML=mkPetal();l.appendChild(el);setTimeout(()=>el.remove(),(dur+del+2)*1000);
+}
+/* Landing petals: 24 like real site */
+for(let i=0;i<24;i++) setTimeout(()=>spawnP('land-petals'),i*150);
+setInterval(()=>spawnP('land-petals'),700);
+/* Global petals after inv opens */
+function startGlobalPetals(){
+  for(let i=0;i<8;i++) setTimeout(()=>spawnP('petal-layer'),i*200);
+  setInterval(()=>spawnP('petal-layer'),800);
+}
+
+/* ── SPARKLE CANVAS ────────────────────────── */
+(function(){
+  const cv=document.getElementById('sparkle-cv');
+  const ctx=cv.getContext('2d');let W,H,pts=[];
+  function resize(){W=cv.width=window.innerWidth;H=cv.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize);
+  for(let i=0;i<70;i++)pts.push({
+    x:Math.random()*window.innerWidth,y:Math.random()*window.innerHeight,
+    vx:(Math.random()-.5)*.3,vy:-Math.random()*.4-.1,
+    r:Math.random()*1.5+.3,a:Math.random()*.4+.06,
+    c:`rgba(${140+~~(Math.random()*60)},${200+~~(Math.random()*40)},${80+~~(Math.random()*60)},`
+  });
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    pts.forEach(p=>{
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.y<-10){p.y=H+5;p.x=Math.random()*W;}
+      if(p.x<0)p.x=W;if(p.x>W)p.x=0;
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=p.c+p.a+')';ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }draw();
+})();
+
+/* ── PAGE OVERLAY ──────────────────────────── */
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    const o=document.getElementById('page-overlay');
+    o.classList.add('out');
+    setTimeout(()=>o.style.display='none',850);
+  },700);
+});
+
+/* ── MUSIC ─────────────────────────────────── */
+const bgm=document.getElementById('bgm');
+let playing=false;
+function toggleMusic(){
+  if(playing){
+    bgm.pause();
+    document.getElementById('land-music').textContent='♪ Sound Off';
+    document.getElementById('mfloat').textContent='🎵';
+    playing=false;
+  }else{
+    bgm.play().catch(()=>{});
+    document.getElementById('land-music').textContent='♪ Sound On';
+    document.getElementById('mfloat').textContent='🔇';
+    playing=true;
+  }
+}
+
+/* ══════════════════════════════════════════════
+   OPEN INVITATION  — GSAP cinematic transition
+══════════════════════════════════════════════ */
+gsap.registerPlugin(ScrollTrigger);
+let invOpened=false;
+
+function openInv(){
+  if(invOpened)return;invOpened=true;
+
+  /* Fade out landing */
+  gsap.to('#landing',{
+    opacity:0,scale:1.05,duration:1.1,ease:'power3.inOut',
+    onComplete:()=>{
+      document.getElementById('landing').style.display='none';
+      const inv=document.getElementById('invitation');
+      inv.classList.add('on');
+      document.getElementById('mfloat').classList.add('vis');
+
+      /* Auto-play music */
+      bgm.play().catch(()=>{});playing=true;
+      document.getElementById('land-music').textContent='♪ Sound On';
+      document.getElementById('mfloat').textContent='🔇';
+
+      startCountdown();
+      startGlobalPetals();
+      spawnSDPetals();
+      initGSAP();
+    }
+  });
+}
+
+/* ── SD SECTION PETALS ─────────────────────── */
+function spawnSDPetals(){
+  const sec=document.getElementById('sd-petals');if(!sec)return;
+  function sp(){
+    const el=document.createElement('div');el.className='spetal';
+    const sz=7+Math.random()*10,dur=5+Math.random()*8,del=Math.random()*2;
+    el.style.cssText=`left:${Math.random()*100}%;width:${sz}px;height:${sz*1.4}px;animation-duration:${dur}s;animation-delay:${del}s;position:absolute;top:-20px;`;
+    el.innerHTML=mkPetal();sec.appendChild(el);setTimeout(()=>el.remove(),(dur+del+2)*1000);
+  }
+  for(let i=0;i<18;i++) setTimeout(sp,i*140);
+  setInterval(sp,800);
+}
+
+/* ── GSAP SCROLL ANIMATIONS ────────────────── */
+function initGSAP(){
+  /* Hero intro */
+  gsap.timeline()
+    .from('.hero-cross',{scale:.5,opacity:0,duration:1,ease:'back.out(1.7)'})
+    .from('.hero-with,.hero-we',{y:40,opacity:0,stagger:.15,duration:.85,ease:'power3.out'},'-=.5')
+    .from('.hero-names',{y:70,opacity:0,stagger:.2,duration:1.1,ease:'power4.out'},'-=.5')
+    .from('.hero-date,.hero-verse',{y:35,opacity:0,duration:.8},'-=.6');
+
+  /* Section reveals */
+  gsap.utils.toArray('.sr-sec').forEach(sec=>{
+    gsap.to(sec,{
+      opacity:1,y:0,duration:.85,ease:'power3.out',
+      scrollTrigger:{trigger:sec,start:'top 88%',toggleActions:'play none none none'}
+    });
+
+    /* Stagger children */
+    const children=[
+      ...sec.querySelectorAll('.ev-card'),
+      ...sec.querySelectorAll('.gal-cell'),
+      ...sec.querySelectorAll('.person-blk'),
+      ...sec.querySelectorAll('.cd-box'),
+    ];
+    if(children.length){
+      gsap.from(children,{
+        y:50,opacity:0,stagger:.13,duration:.8,ease:'power3.out',
+        scrollTrigger:{trigger:sec,start:'top 82%'}
+      });
+    }
+    /* Labels */
+    const labels=sec.querySelectorAll('.sec-lbl,.sd-lbl,.cd-row');
+    if(labels.length){
+      gsap.from(labels,{y:30,opacity:0,duration:.7,ease:'power2.out',
+        scrollTrigger:{trigger:sec,start:'top 85%'}
+      });
+    }
+  });
+
+  /* Event card hover depth */
+  document.querySelectorAll('.ev-card').forEach(card=>{
+    card.addEventListener('mouseenter',()=>gsap.to(card,{y:-5,scale:1.015,duration:.35,ease:'power2.out'}));
+    card.addEventListener('mouseleave',()=>gsap.to(card,{y:0,scale:1,duration:.35,ease:'power2.out'}));
+  });
+
+  /* Progress bar */
+  ScrollTrigger.create({
+    start:0,end:'max',
+    onUpdate:self=>document.getElementById('prog').style.width=(self.progress*100)+'%'
+  });
+}
+
+/* ── COUNTDOWN ─────────────────────────────── */
+function startCountdown(){
+  const target=new Date('2026-05-21T11:00:00').getTime();
+  const els={d:document.getElementById('cd-d'),h:document.getElementById('cd-h'),m:document.getElementById('cd-m'),s:document.getElementById('cd-s')};
+  function setVal(el,val){
+    const v=String(val).padStart(2,'0');
+    if(el.textContent!==v){
+      el.classList.add('flip');
+      setTimeout(()=>{el.textContent=v;el.classList.remove('flip');},160);
+    }
+  }
+  function tick(){
+    const diff=target-Date.now();if(diff<=0)return;
+    setVal(els.d,Math.floor(diff/86400000));
+    setVal(els.h,Math.floor((diff%86400000)/3600000));
+    setVal(els.m,Math.floor((diff%3600000)/60000));
+    setVal(els.s,Math.floor((diff%60000)/1000));
+  }
+  tick();setInterval(tick,1000);
+}
+
+/* ── LIGHTBOX ──────────────────────────────── */
+function openLB(src){document.getElementById('lb-img').src=src;document.getElementById('lightbox').classList.add('on');}
+function closeLB(){document.getElementById('lightbox').classList.remove('on');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB();});
+
+/* ── RSVP ──────────────────────────────────── */
+let choice=null;
+function pick(v){choice=v;document.getElementById('btn-yes').classList.toggle('picked',v==='yes');document.getElementById('btn-no').classList.toggle('picked',v==='no');}
+function submitRSVP(){
+  if(!document.getElementById('rname').value.trim()){alert('Please enter your name.');return;}
+  if(!choice){alert('Please select your attendance.');return;}
+  document.getElementById('rsvp-form').style.display='none';
+  document.getElementById('rsvp-ty').style.display='block';
+}
+
+/* ── SHARE ─────────────────────────────────── */
+function doWA(){window.open('https://wa.me/?text='+encodeURIComponent("You're invited to James & Sarah's Wedding! 🕊️\n"+location.href),'_blank');}
+function doCal(){window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&text=James+%26+Sarah+Wedding&dates=20261219T100000Z/20261219T230000Z&location=Christ+Church+Cathedral,+Nashville','_blank');}
+function doCopy(){navigator.clipboard?navigator.clipboard.writeText(location.href).then(()=>alert('Link copied! ✓')):alert(location.href);}
+
+/* ── SCROLL PROGRESS (fallback) ────────────── */
+window.addEventListener('scroll',()=>{
+  const pct=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+  document.getElementById('prog').style.width=Math.min(pct,100)+'%';
+},{passive:true});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".sr-sec").forEach((sec, i) => {
+
+  const elements = sec.querySelectorAll("h1,h2,h3,p,img,.portrait,.ev-card");
+
+  gsap.from(elements, {
+    opacity:0,
+    y:60,
+    scale:0.96,
+    duration:1.2,
+    ease:"power3.out",
+    stagger:0.08,
+    scrollTrigger:{
+      trigger:sec,
+      start:"top 85%",
+    }
+  });
+
+});
+
+gsap.to(".hero-church", {
+  y: -40,
+  scrollTrigger:{
+    trigger:".ce-hero",
+    scrub:true
+  }
+});
+
+gsap.to(".hero-couple", {
+  y: -60,
+  scrollTrigger:{
+    trigger:".ce-hero",
+    scrub:true
+  }
+});
+
+gsap.utils.toArray('.ev-photo img').forEach(img=>{
+  gsap.to(img,{
+    y:20,
+    scrollTrigger:{
+      trigger:img,
+      scrub:1
+    }
+  });
+});
+</script>
+</body>
+</html>
